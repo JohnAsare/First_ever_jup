@@ -12,9 +12,9 @@ def count_word():
     aj_dict = {}
 
     for line in my_file:
-        for letter in line:
-            aj_dict[letter] = 1
-    print(aj_dict)
+        remove_space = line.strip()
+        print(remove_space)
+
 
 
 count_word()
