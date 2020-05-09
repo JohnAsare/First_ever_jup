@@ -6,11 +6,16 @@
 dictionary"""
 
 
+# count_word will count the words in the file
 def count_word():
     my_file = open('myfile.txt')
+    aj_dict = {}
 
     for line in my_file:
-        print(line)
+        for letter in line:
+            aj_dict[letter] = 1
+    print(aj_dict)
+
 
 count_word()
 
