@@ -12,9 +12,10 @@ def count_word():
     aj_dict = {}
 
     for statement in my_file:
-        remove_spaces = statement.strip()
+        remove_spaces = statement.strip().lower()
         for letter in remove_spaces:
-            aj_dict[letter] = 1
+            if letter not in aj_dict:
+                aj_dict[letter] = 1
     print(aj_dict)
 
 count_word()
