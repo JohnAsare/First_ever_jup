@@ -11,11 +11,11 @@ def count_word():
     my_file = open('myfile.txt')
     aj_dict = {}
 
-    for line in my_file:
-        remove_space = line.strip()
-        print(remove_space)
-
-
+    for statement in my_file:
+        remove_spaces = statement.strip()
+        for letter in remove_spaces:
+            aj_dict[letter] = 1
+    print(aj_dict)
 
 count_word()
 
